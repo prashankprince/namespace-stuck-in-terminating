@@ -84,7 +84,7 @@ Steps below shows how you can manually delete terminating namespaces.
 5. From a new terminal window, make an API call with your temporary proxy IP and port like below:
 
     ````
-    curl -k -H "Content-Type: application/json" -X PUT --data-binary @tmp.json http://127.0.0.1:8001/api/v1/namespaces/<terminating-            namespace>/finalize
+    curl -k -H "Content-Type: application/json" -X PUT --data-binary @tmp.json http://127.0.0.1:8001/api/v1/namespaces/<terminating-namespace>/finalize
     ````
     
 6. Output of above must have finalizers removed as per below:
